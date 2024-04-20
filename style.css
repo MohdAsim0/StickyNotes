@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+}
+
+#notes {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  /* margin: 2rem auto; */
+  /* justify-content: space-between; */
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  /* background-color: rgb(186, 244, 244); */
+  background-color: #50d8d7;
+background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+
+  height: 100%;
+}
+
+.left button {
+  outline: none;
+  font-size: 19px;
+  text-align: center;
+  width: 130px;
+  padding: 13px;
+  border-radius: 15px;
+  background-color: rgb(234, 162, 162);
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.5);
+  border: none;
+  color: rgb(116, 43, 43);
+  font-weight: 700;
+}
+
+.left button:hover {
+  transition: transform 0.3s ease-in;
+  color: rgb(238, 227, 227);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.styling {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.edit {
+  color: aliceblue;
+  position: absolute;
+  right: 1%;
+  top: 19%;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.edit:hover {
+  color: bisque;
+}
+.left textarea,
+.left .styling {
+  margin-bottom: 1rem;
+}
+
+.left textarea {
+  box-shadow: 2px 2px 3px 4px rgba(240, 153, 153, 0.5);
+  padding: 10px;
+  outline: none;
+  width: 75%;
+  height: 40%;
+  border-color: white;
+  border-radius: 10px;
+}
+.right {
+  background-color: #e79087;
+  background-image: linear-gradient(315deg, #efc4bf 0%, #f7e5c2 74%);
+}
+.all-notes {
+  /* margin-top: 80px; */
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.all-notes .note {
+  border-radius: 5px;
+  position: relative;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 3px 4px;
+  width: 30%;
+  min-width: 150px;
+  max-width: 168px;
+  margin: 13px;
+  height: 100px;
+  font-size: 20px;
+}
+
+.all-notes .note:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.right .all-notes .close {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.right .all-notes .close:hover {
+  color: rgb(225, 207, 207);
+}
+
+h1 {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(19, 50, 19);
+  font-weight: 600;
+  font-size: 2.3rem;
+}

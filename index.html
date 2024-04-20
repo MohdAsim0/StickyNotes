@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div id="notes">
+            <div class="left">
+                <h2 style="color: rgb(9, 26, 9); font-size: 30px;">Write Your Notes below </h2>
+                <textarea name="add notes" placeholder="enter your note" id="" cols="30" rows="10"></textarea>
+
+                <div class="styling">
+                    <div>
+                        <label for="bg"
+                            style="color:rgb(4, 23, 41);font-size: 19px; margin-right: 3px;font-weight: 400;">Background
+                            Color</label>
+                        <input type="color" id="bg" value="#000000">
+                    </div>
+
+                    <div>
+                        <label for="text"
+                            style="color:rgb(4, 23, 41);font-size: 19px; margin-right: 3px;font-weight: 400;">Text
+                            Color</label>
+                        <input type="color" id="text" value="#ffffff">
+                    </div>
+                </div>
+
+                <button type="submit">Add note</button>
+
+            </div>
+
+            <div class="right">
+                <h1> All You Notes Available here....</h1>
+                <div class="all-notes">
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- js -->
+    <script src="index.js"></script>
+</body>
+
+</html>
